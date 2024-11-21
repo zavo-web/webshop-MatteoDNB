@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CalcioPlanet</title>
+    <link rel="stylesheet" href="Calcio.CSS" />
+  </head>
+  <body>
+    <header>
+      <img
+        src="https://scontent.xx.fbcdn.net/v/t1.15752-9/462547177_1097233241550126_7083247682040444396_n.png?stp=dst-png_s480x480&_nc_cat=100&ccb=1-7&_nc_sid=0024fc&_nc_ohc=Gmb6Hikp4J4Q7kNvgEZpGuj&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1QGAgBeR00zmzpvv0_cL1GuxgoihVzNzAlCP1sam5K0EJA&oe=676003ED"
+        width="150"
+        ,
+        height="150"
+      />
+      <select id="Valuta" onchange="updatePrices()">
+        <option value="Euro">€</option>
+        <option value="Dollar">$</option>
+      </select>
+
+      <class id="shipment">
+        <p>Gratis shipment boven €100.</p>
+      </class>
+      <form id="form">
+        <input type="search" id="query" name="q" placeholder="Product Zoeken" />
+      </form>
+      <section id="navigatie">
+        <nav>
+          <ul class="nav-lijst">
+            <li><a href="#Categorie">Categorieën</a></li>
+            <li><a href="#Producten">Producten</a></li>
+            <li><a href="#Contact">Contact</a></li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+
+    <main>
+      <section id="Categorie">
+        <h3>New in</h3>
+        <h3>Price Drops</h3>
+        <h3>Player Version</h3>
+        <h3>Men</h3>
+        <h3>Kids</h3>
+        <h3>patches</h3>
+      </section>
+
+      <section id="Producten" class="Container">
+        <ul class="productenLijst">
+          <li class="product">
+            <img
+              src="https://pbs.twimg.com/media/Gcm5a9IWgAAw3f2?format=jpg&name=large"
+              width="100"
+              height="100"
+            />
+            <link
+              rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+            />
+
+            <h3 class="productTitel">Iniesta Match Issue Barcelona</h3>
+            <style>
+              .checked {
+                color: orange;
+              }
+            </style>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <p>€500</p>
+          </li>
+        </ul>
+        <ul class="productenLijst">
+          <li class="product">
+            <img
+              src="https://pbs.twimg.com/media/Gcm4E_2XQAAkbzJ?format=jpg&name=medium"
+              width="100"
+              height="100"
+            />
+            <h3 class="productTitel">Messi Argentina World Cup Final</h3>
+            <style>
+              .checked {
+                color: orange;
+              }
+            </style>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <p>€150</p>
+          </li>
+        </ul>
+        <ul class="productenLijst">
+          <li class="product">
+            <img
+              src="https://pbs.twimg.com/media/Gcm4SrAXwAAz9op?format=jpg&name=large"
+              width="100"
+              height="100"
+            />
+            <h3 class="productTitel">Pescara Fiorilla Match Worn</h3>
+            <style>
+              .checked {
+                color: orange;
+              }
+            </style>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <p>€175</p>
+          </li>
+        </ul>
+        <ul class="productenLijst">
+          <li class="product">
+            <img
+              src="https://scontent.xx.fbcdn.net/v/t1.15752-9/462548711_1619615062015269_7030418066988256444_n.png?_nc_cat=111&ccb=1-7&_nc_sid=0024fc&_nc_ohc=5GgWRMPnMTQQ7kNvgHRSDI-&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1QGD8ZH_mLGKjMcSg_l5mnWUNzzPwaNS7qE6uQN6Klo2FA&oe=6761A835"
+              width="100"
+              height="100"
+            />
+            <h3 class="productTitel">AC Milan 23/24 Player Version</h3>
+            <style>
+              .checked {
+                color: orange;
+              }
+            </style>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <p>€75</p>
+          </li>
+        </ul>
+        <ul class="productenLijst">
+          <li class="product">
+            <img
+              src="https://scontent.xx.fbcdn.net/v/t1.15752-9/465441291_578213061346036_4250431969611978422_n.png?_nc_cat=103&ccb=1-7&_nc_sid=0024fc&_nc_ohc=cjaepqHwpf4Q7kNvgFA7ICD&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1QGR36QGHUDyCW3dxYHs-dJ5jDAi3DHdh9UzwoAmVG1EtQ&oe=6761A2EF"
+              width="100"
+              height="100"
+            />
+            <h3 class="productTitel">Chiesa Juventus  Away 21/22 Kids</h3>
+            <style>
+              .checked {
+                color: orange;
+              }
+            </style>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <p>€25</p>
+          </li>
+        </ul>
+        <ul class="productenLijst">
+          <li class="product">
+            <img
+              src="https://media.discordapp.net/attachments/834491883794726952/1308064944037826611/20241118_144229.jpg?ex=673c95e9&is=673b4469&hm=38fb90c21c82b078440860f0cb9851f18009681ae4bd7b24827f6b318af6e1f0&=&format=webp&width=427&height=570"
+              width="100"
+              height="100"
+            />
+            <h3 class="productTitel">
+            2022 World cup Champions patch
+            </h3>
+            <style>
+              .checked {
+                color: orange;
+              }
+            </style>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <p>€15</p>
+          </li>
+        </ul>
+      </section>
+
+      <section id="SignUp">
+        <h2>Krijg als eerste toegang tot de nieuwste drops en aanbiedingen!</h2>
+        <form id="form">
+          <input
+            type="search"
+            id="query"
+            name="q"
+            placeholder="Jouw E-Mail Adress"
+          />
+          <button>SignUp</button>
+        </form>
+      </section>
+
+      <section id="SocialeMedia">
+        <footer>
+          <ul class="Contact">
+            <a href="https://www.instagram.com" target="_blank">
+              <img
+                src="https://scontent.xx.fbcdn.net/v/t1.15752-9/462561978_1828789084532595_1000698088310729971_n.png?_nc_cat=106&ccb=1-7&_nc_sid=0024fc&_nc_ohc=qZnEX2rSligQ7kNvgGFp07Z&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1QGKSKmr59NZ0AEWA631bfwu26E_YjH_8e9xSQjUq-Ra4Q&oe=676017DB"
+                width="30"
+                height="30"
+              />
+            </a>
+            <a href="https://www.facebook.com/" target="_blank">
+              <img
+                src="https://scontent.xx.fbcdn.net/v/t1.15752-9/462561890_1602625527342950_4356602485702173481_n.png?_nc_cat=109&ccb=1-7&_nc_sid=0024fc&_nc_ohc=2tmmW7AQx90Q7kNvgHSF10Y&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1QE2MAFDD55ZC5CA-Of_hL0hX4LHholUENq1hNMytEqUKA&oe=676012DB"
+                width="30"
+                height="30"
+              />
+            </a>
+            <a href="https://x.com/home" target="_blank">
+              <img
+                src="https://scontent.xx.fbcdn.net/v/t1.15752-9/462561406_937471694968693_1961871028424889660_n.png?_nc_cat=111&ccb=1-7&_nc_sid=0024fc&_nc_ohc=oov6Tdc3vXYQ7kNvgGXEAkA&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1QESzfI6sggrwcHaPFfFcll1CbWVWCdreIDk4nmF8bWxwQ&oe=67601BA0"
+                width="30"
+                height="30"
+              />
+            </a>
+          </ul>
+        </footer>
+      </section>
+      <section id="Contact">
+        <footer>
+          <h2>Ons Contacteren: Calcio-Planet@gmail.com</h2>
+        </footer>
+      </section>
+    </main>
+  </body>
+</html>
