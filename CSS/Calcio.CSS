@@ -2,155 +2,192 @@
 header {
     display: flex;
     justify-content: space-between;
-    background-color: rgb(51, 147, 85);
-    padding: 10px;
-    display: flex;
+    background-color: #003F87;
+    padding: 10px 20px ;
     align-items: center;
+    position: relative;
+    
   }
   #Valuta {
-    position: absolute; 
-    top: 10px; 
-    left: 10px; 
-    padding: 5px; 
-    background-color: rgb(51, 147, 85);
-    border: 2px solid rgb(51, 147, 85);
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 5px;
+    background-color: #003F87;
+    border: 2px solid #003F87;
     color: white;
   }
-
+  
   #shipment p {
     position: absolute;
     top: 0px;
     left: 55px;
-    color:white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  
+  /* Navigatie */
+  
+  .nav-lijst {
+    display: flex;
   }
 
-/* Navigatie */
-.nav-lijst {
-  display: flex; 
-  justify-content: space-around;
-  list-style: none;
-  padding: 0; 
-  margin: 0px; 
-}
+  .nav-lijst li {
+    margin: 15px;
+    color: white;
+    list-style: none;
+  }
+  
+  .nav-lijst li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  
+  .nav-lijst li a:hover {
+    color: rgb(45, 155, 185);
+  }
+  
+  /*CATEGORIE*/
 
-.nav-lijst li {
-  margin: 0 15px; 
-}
+   #Categorie :hover {
+    color: rgb(45, 155, 185);
+  }
 
-.nav-lijst li a {
-  text-decoration: none; 
-  color: white; 
-  font-weight: bold;
-  font-size: 16px; 
-  font-size: x-large;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-.nav-lijst li a:hover {
-  color: lightgray; 
-}
-
-
-
-/*CATEGORIE*/
-
-#Categorie {
-  display: flex;
-  text-align: center;
-  justify-content: space-evenly;
-  font-family: arial;
-}
-
-/*PRODUCTEN*/
-
-.productenLijst {
-  display: flex;
-  gap: 20px; 
-  justify-content: space-around; 
-  list-style: none; 
-  padding: 0; 
-}
-
-.Container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around; 
-  gap: 20px;  
-}
-
-.product {
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  text-align: center;
-  padding: 15px;
-  transition: transform 0.5s ease, box-shadow 0.5s ease;
-  font-family: arial;
-}
-
-.product:hover {
-  transform: scale(0.95);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-}
-
-.product img {
-  width: 100%;
-  max-width: 150px;
-  height: auto;
-  margin: 0 auto 10px;
-  border-radius: 10px;
-  border: 2px solid #ddd;
-}
-
-.productTitel {
-  font: size 20px;
-  color: #001f3f;
-  margin: 5px;
-}
-
-.product p {
-  font-weight: bold;
-  color: #e67e22;
-  margin: 0;
-}
-
-/*SIGN UP*/
-#SignUp {
+  #Categorie {
     display: flex;
-    flex-direction: column; 
-    text-align: center; 
+    text-align: center;
+    justify-content: space-evenly;
+    font-family: arial;
+  }
+  
+  /*PRODUCTEN*/
+  
+  .productenLijst {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .Container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+  }
+  
+  .product {
+    background-color: #fff;
+    
+    text-align: center;
+    padding: 15px;
+    font-family: arial;
+  }
+  
+
+  .product img {
+    width: 300%;
+    max-width: 300px;
+    height: auto;
+    margin: 0 auto 10px;
+    border-radius: 10px;
+    border: 2px solid #ddd;
+  }
+  
+  .productTitel {
+    font: size 20px;
+    color: #001f3f;
+    margin: 5px;
+  }
+  
+  
+  
+  .product p {
+    color: #e74c3c;
+    margin: 0;
+    font-family: arial;
+    font-weight: bold;
+
+  }
+
+  
+  
+  .prijs {
+    font-size: 16px;
+    font-weight: bold;
+    color: #e74c3c;
+    font-family: arial;
+  }
+  
+  .oude-prijs {
+    font-size: 16px;
+    text-decoration: line-through;
+    color: #7f8c8d;
+    font-family: arial;
+  }
+  
+    .Promo {
+      display: inline-block;
+      background-color: #047611;
+      color: rgb(250, 250, 250);
+      font-size: 15px;
+      padding: 5px 10px;
+      border-radius: 5px;
+      margin-top: 10px;
+      font-weight: bold;
+     }
+
+  .Nieuw {
+    display: inline-block;
+    background-color: #003F87;
+    color: white;
+    font-size: 15px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-weight: bold;
+
+  }
+
+
+
+  /*SIGN UP*/
+  #SignUp {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
     padding: 10px;
     font-size: small;
     background-color: rgb(0, 0, 0);
     font-family: Arial;
     color: white;
-}
-
-/*FOOTER*/
-ul.Contact {
+  }
+  
+  /*FOOTER*/
+  ul.Contact {
     display: flex;
     text-align: center;
-}
+  }
   ul.Contact a {
     font-size: 20px;
     margin: 0 50px;
-}
-ul.Contact img {
-    width: 50px;  
-    height: 50px; 
+  }
+  ul.Contact img {
+    width: 50px;
+    height: 50px;
   }
   ul.Contact a:hover img {
     opacity: 0.7;
   }
   footer {
     display: flex;
-    justify-content: center; 
-    align-items: center; 
-    background-color: rgb(51, 147, 85);
+    justify-content: center;
+    align-items: center;
+    background-color: #003F87;
     font-family: Arial;
     color: white;
   }
-
-
-
+  
