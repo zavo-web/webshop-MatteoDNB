@@ -169,6 +169,40 @@ header {
   font-weight: bold;
 }
 
+.Patches {
+  display: inline-block;
+  background-color: orange;
+  color: white;
+  font-size: 15px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.MatchWorn {
+  display: inline-block;
+  background-color: red;
+  color: white;
+  font-size: 15px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.Men {
+  display: inline-block;
+  background-color: rgb(172, 20, 222);
+  color: white;
+  font-size: 15px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-weight: bold;
+  
+}
+
 /*SIGN UP*/
 #SignUp {
   display: flex;
