@@ -97,8 +97,8 @@ header {
 }
 
 .Container {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   justify-content: space-around;
   gap: 10px;
   list-style: none;
@@ -238,4 +238,9 @@ footer {
   background-color: rgba(6, 147, 227, 1);
   font-family: Arial;
   color: white;
+}
+
+a {
+  list-style: none;
+  text-decoration: none;
 }
