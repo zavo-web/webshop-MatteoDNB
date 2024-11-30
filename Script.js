@@ -1,4 +1,4 @@
-         const exchangeRate = 1.1; 
+        const exchangeRate = 1.1; 
         let isEuro = true;
 
         function updatePrices() {
