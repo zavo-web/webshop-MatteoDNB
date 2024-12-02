@@ -1,0 +1,242 @@
+/*HEADER*/
+header {
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px 10px;
+  background-color: rgba(6, 147, 227, 1);
+  box-shadow: 0 0 14px rgba(0, 0, 0, 0.5);
+}
+
+.logo img {
+  max-width: 120px;
+  height: auto;
+}
+
+.navmenu {
+  display: flex;
+  list-style: none;
+}
+
+.navmenu a {
+  color: white;
+  font-size: 20px;
+  text-transform: capitalize;
+  padding: 10px 20px;
+  font-weight: 400;
+  transition: all 0.42s ease;
+  text-decoration: none;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+  font-weight: bold;
+}
+
+.navmenu a:hover {
+  color: black;
+}
+
+.nav-icon {
+  display: flex;
+  align-items: center;
+}
+
+.nav-icon i {
+  margin-right: 20px;
+  color: white;
+  font-size: 25px;
+  font-weight: 400;
+  transition: all 0.42s ease;
+}
+
+.nav-icon i:hover {
+  transform: scale(1.1);
+  color: black;
+}
+
+#Valuta {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 5px;
+  background-color: rgba(6, 147, 227, 1);
+  border: 2px solid rgba(6, 147, 227, 1);
+  color: white;
+}
+
+#shipment p {
+  position: absolute;
+  top: 0px;
+  left: 75px;
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+/*CATEGORIE*/
+
+#Categorie :hover {
+  color: rgb(45, 155, 185);
+}
+
+#Categorie {
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+  font-family: arial;
+}
+
+/*PRODUCTEN*/
+
+
+.Container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  justify-content: space-around;
+  gap: 10px;
+  list-style: none;
+}
+
+.product {
+  background-color: #fff;
+
+  text-align: center;
+  padding: 15px;
+  font-family: arial;
+}
+
+.product img {
+  width: 300%;
+  max-width: 300px;
+  height: auto;
+  margin: 0 auto 10px;
+  border-radius: 10px;
+  border: 2px solid #ddd;
+}
+
+.productTitel {
+  font: size 20px;
+  color: #001f3f;
+  margin: 5px;
+}
+
+.product:hover {
+  transform: scale(0.95);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.prijs {
+  font-size: 16px;
+  font-weight: bold;
+  color: #e74c3c;
+  font-family: arial;
+}
+
+.oude-prijs {
+  font-size: 16px;
+  text-decoration: line-through;
+  color: #7f8c8d;
+  font-family: arial;
+}
+
+.Promo {
+  display: inline-block;
+  background-color: #047611;
+  color: rgb(250, 250, 250);
+  font-size: 15px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.Nieuw {
+  display: inline-block;
+  background-color: #003f87;
+  color: white;
+  font-size: 15px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.Patches {
+  display: inline-block;
+  background-color: orange;
+  color: white;
+  font-size: 15px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.MatchWorn {
+  display: inline-block;
+  background-color: red;
+  color: white;
+  font-size: 15px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.Men {
+  display: inline-block;
+  background-color: rgb(172, 20, 222);
+  color: white;
+  font-size: 15px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-weight: bold;
+  
+}
+
+/*SIGN UP*/
+#SignUp {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 10px;
+  font-size: small;
+  background-color: rgb(0, 0, 0);
+  font-family: Arial;
+  color: white;
+}
+
+/*FOOTER*/
+ul.Contact {
+  display: flex;
+  text-align: center;
+  text-decoration: none;
+  list-style: none;
+}
+ul.Contact a {
+  font-size: 20px;
+  margin: 0 50px;
+}
+ul.Contact img {
+  width: 50px;
+  height: 50px;
+}
+ul.Contact a:hover img {
+  opacity: 0.7;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(6, 147, 227, 1);
+  font-family: Arial;
+  color: white;
+  
+}
+
+a {
+  list-style: none;
+  text-decoration: none;
+}
